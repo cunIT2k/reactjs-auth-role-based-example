@@ -1,10 +1,10 @@
 import React from 'react';
-import './App.css';
+import './styles/index.less';
 
 function App() {
   return (
     <div className="App">
-      <h1>Home</h1>
+      <h1>Hello</h1>
     </div>
   );
 }
