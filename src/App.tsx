@@ -1,10 +1,14 @@
 import React from 'react';
 import './styles/index.less';
+import AppLayout from './components/layout';
+import HomePage from './pages/home';
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello</h1>
+      <AppLayout>
+        <HomePage />
+      </AppLayout>
     </div>
   );
 }
