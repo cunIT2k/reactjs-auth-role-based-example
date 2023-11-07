@@ -3,9 +3,10 @@ import { Row, Col, Typography, Layout } from 'antd';
 
 import AppFooter from './Footer';
 import AppMenu from './Menu';
+import { Outlet } from 'react-router';
 
 type Props = {
-  children: React.ReactNode;
+  children?: React.ReactNode;
 };
 
 const AppLayout: React.FC<Props> = ({ children }) => {
@@ -26,7 +27,9 @@ const AppLayout: React.FC<Props> = ({ children }) => {
             </Col>
           </Row>
         </Header>
-        <Content className="app_content">{children}</Content>
+        <Content className="app_content">
+          <Outlet />
+        </Content>
         <Footer className="app_footer">
           <AppFooter />
         </Footer>
